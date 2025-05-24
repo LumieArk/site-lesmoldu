@@ -23,7 +23,7 @@
       height: 100%;
       z-index: 0;
     }
-    header, .section, footer, .discord-link {
+    header, .section, footer, .discord-link, .intro, .map-section {
       position: relative;
       z-index: 1;
     }
@@ -45,7 +45,7 @@
       padding: 1rem;
       border-radius: 10px;
     }
-    .section {
+    .section, .map-section {
       background-color: rgba(0, 0, 0, 0.7);
       margin: 2rem auto;
       padding: 2rem;
@@ -78,6 +78,20 @@
     }
     .discord-link a:hover {
       background-color: #4752c4;
+    }
+    .map-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid #a6e22e;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #a6e22e;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .map-links a:hover {
+      background-color: #a6e22e;
+      color: black;
     }
     footer {
       text-align: center;
@@ -124,10 +138,16 @@
     </ul>
   </section>
 
-  <section class="section">
-    <h2>Cartes disponibles</h2>
-    <p><strong>Cartes actives :</strong> The Island, The Center<br>
-       <strong>Cartes à venir :</strong> Ragnarok (à la sortie officielle), Extinction, Aberration</p>
+  <section class="map-section">
+    <h2>Cartes interactives</h2>
+    <p>Clique sur une carte pour en savoir plus :</p>
+    <div class="map-links">
+      <a href="#">🗺️ The Island</a>
+      <a href="#">🏝️ The Center</a>
+      <a href="#">🌋 Ragnarok</a>
+      <a href="#">🌌 Extinction</a>
+      <a href="#">🧫 Aberration</a>
+    </div>
   </section>
 
   <div class="discord-link">
@@ -152,3 +172,4 @@
   </script>
 </body>
 </html>
+
