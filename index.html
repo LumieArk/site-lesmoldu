@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[FR] Les Moldu - Serveur ARK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Cinzel Decorative', cursive;
       background-color: #0f2c1b;
       color: #f2f2f2;
       background-image: url('https://i.postimg.cc/13Ntdpn5/fond-image-site.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    header, .section, footer, .discord-link {
+      position: relative;
+      z-index: 1;
     }
     header {
       background-color: rgba(0,0,0,0.7);
@@ -23,6 +35,15 @@
     h1 {
       font-size: 3rem;
       margin: 0;
+    }
+    .intro {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 2rem auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+      padding: 1rem;
+      border-radius: 10px;
     }
     .section {
       background-color: rgba(0, 0, 0, 0.7);
@@ -67,10 +88,15 @@
   </style>
 </head>
 <body>
+  <div id="particles-js"></div>
   <header>
     <h1>[FR] Les Moldu</h1>
     <p>Serveur ARK: Survival Ascended - Cluster PvE</p>
   </header>
+
+  <div class="intro">
+    <p><em>"Un monde oublié vous attend… Franchissez le portail et laissez la magie opérer."</em></p>
+  </div>
 
   <section class="section">
     <h2>Présentation</h2>
@@ -111,5 +137,18 @@
   <footer>
     &copy; 2025 [FR] Les Moldu | Tous droits réservés 🦕
   </footer>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        color: { value: "#a6e22e" },
+        move: { enable: true, speed: 0.5 },
+        line_linked: { enable: false },
+        opacity: { value: 0.3 }
+      }
+    });
+  </script>
 </body>
 </html>
