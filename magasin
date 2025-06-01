@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magasin - Les Moldu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel Decorative', cursive;
+      background-color: #0f2c1b;
+      color: #f2f2f2;
+      background-image: url('https://i.postimg.cc/13Ntdpn5/fond-image-site.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 4rem auto;
+      padding: 2rem;
+      max-width: 800px;
+      border-radius: 12px;
+    }
+    h1 {
+      text-align: center;
+      color: #a6e22e;
+      font-size: 2.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+    ul li {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 8px;
+    }
+    .info {
+      margin-top: 2rem;
+      font-size: 1rem;
+      text-align: center;
+    }
+    a.button {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #5865F2;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    a.button:hover {
+      background-color: #4752c4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Magasin du serveur</h1>
+    <p style="text-align:center">Monnaie utilisée : <strong>Champignons Rares</strong> 🍄</p>
+    <ul>
+      <li>10 Champignons Rares → 1 Cryopod</li>
+      <li>25 Champignons Rares → 1 Dino commun</li>
+      <li>100 Champignons Rares → 1 Dino rare ou récompense spéciale</li>
+    </ul>
+    <div class="info">
+      Pour acheter, contactez un admin en jeu ou sur Discord.<br>
+      Les objets sont remis à votre base ou au marché du serveur.
+    </div>
+    <a class="button" href="index.html">⬅ Retour à l'accueil</a>
+  </div>
+</body>
+</html>
